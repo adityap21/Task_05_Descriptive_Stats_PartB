@@ -1,21 +1,42 @@
+# Task 05 – Descriptive Statistics (NBA Data Analysis)
 
-# NBA Player Analysis — Python vs ChatGPT (2022–23)
+## Overview
+This repository contains the expanded Task 5 submission.  
+It analyzes NBA player statistics from the 2022–23 season using Python, and compares those results with ChatGPT’s narrative answers.  
+The goal is to show where Python is needed for exact, reproducible results and where AI tools can help with explanation.
 
-**Dataset filename:** `Nba_data.csv`
+## Dataset
+- Sample of 50 NBA players from the 2022–23 season.  
+- Columns: Player, PTS, REB, AST, STL, BLK, FG%, 3P%, FT%.  
+- Percentages normalized to 0–1 if necessary.  
 
-## Contents
-- `Task_05_Complete_NBA_LLManalysis_NbaData.ipynb` — main notebook (prefers `Nba_data.csv`)
-- `Nba_data.csv` — included subset; replace with your full dataset if you have it
-- `q3_composite_table.csv` — saved by the notebook
-- `summary_answers.json` — saved by the notebook
-- `docs/AI_Street_Interview_Script.md` — 75-second narration (already created earlier)
-- `docs/Reporting_Form_Answers.md` — copy-paste for course form (already created earlier)
+## Questions Answered
+1. Who scored the most points per game?  
+2. Who is the best all-around player (PTS + REB + AST)?  
+3. Who is the most complete player?  
+4. Who is the best shooter (FG%, 3P%, FT%)?  
+5. How many players averaged at least 25 points per game?  
+6. How many players averaged at least 8 assists per game?  
+
+## Method
+- Cleaned and normalized the dataset.  
+- Used Python (pandas, matplotlib, scipy) for analysis and visualizations.  
+- Asked ChatGPT the same questions for comparison.  
+- Documented matches, mismatches, and limitations.  
+- Saved outputs (`summary_answers.json`, `q3_composite_table.csv`) for reporting.  
+
+## Visuals
+- Top-10 scorers bar chart  
+- Histogram of assists  
+- Scatter plot of points vs assists  
+
+## Files in this Repo
+- `Task_05_Complete_NBA_LLManalysis_NbaData.ipynb` – Jupyter Notebook with code, analysis, and visuals.  
+- `Task_05_Descriptive_Stats_Nba_data.docx` – Written report.  
+- `README.md` – This file.  
 
 ## How to Run
-1. Put your data as `Nba_data.csv` in the repo root (or `data/nba_players_2022_23.csv`).
-2. Open the notebook and Run All.
-3. Use the charts and saved outputs in your submission.
-
-## Notes
-- Answers all six questions with code and visuals.
-- “Most complete” and “best shooter” use transparent composites.
+1. Ensure `Nba_data.csv` is in the repo root.  
+2. Open `Task_05_Complete_NBA_LLManalysis_NbaData.ipynb` in Jupyter or VS Code.  
+3. Run all cells to reproduce results and generate charts.  
+4. Use the saved outputs in your reporting form.  
